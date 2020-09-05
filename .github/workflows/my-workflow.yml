@@ -4,14 +4,9 @@ on:
     types: [created]
 
 jobs:
-  backport:
-    name: My Action
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v1
-        name: "Checkout repo.."        
-      - uses: ./.github/actions/my-action
-        name: "Running action.."                
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-
+  my_first_job:
+     runs-on: ubuntu-latest
+     steps: 
+     - uses: actions/checkout@v1
+     - name: My first step
+       uses: ./.github/actions/my-action
