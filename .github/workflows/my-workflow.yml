@@ -10,7 +10,7 @@ jobs:
     steps:
       - uses: actions/checkout@v1
         name: "Checkout repo.."        
-      - uses: ./.github/actions/my-actionc
+      - uses: ./.github/actions/my-action
         name: "Running action.."                
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
