@@ -1,0 +1,14 @@
+name: 'My Action'
+inputs:
+  github_token:
+    description: Token for the GitHub API.
+    required: true
+  my_object:
+    prop_a: value_a
+    prop_b: value_b    
+runs:
+  using: 'node12'
+  main: 'src/index.js'
+branding:
+  icon: git-branch
+  color: green
