@@ -8,7 +8,9 @@ jobs:
     name: My Action
     runs-on: ubuntu-latest
     steps:
+      - name: "Checkout repo.."
       - uses: actions/checkout@v2
+      - name: "Running action.."        
       - uses: ./.github/actions/my-action
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
