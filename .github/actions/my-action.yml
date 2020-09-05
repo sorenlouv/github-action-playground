@@ -4,8 +4,8 @@ inputs:
     description: Token for the GitHub API.
     required: true
   my_object:
-    prop_a: value_a
-    prop_b: value_b    
+    description: An object with several fields
+    required: false
 runs:
   using: 'node12'
   main: 'src/index.js'
