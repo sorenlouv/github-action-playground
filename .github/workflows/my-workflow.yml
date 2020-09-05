@@ -9,9 +9,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: "Checkout repo.."
-      - uses: actions/checkout@v2
+        uses: actions/checkout@v2
       - name: "Running action.."        
-      - uses: ./.github/actions/my-action
+        uses: ./.github/actions/my-action
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           my_object: '{"prop_a":"value_a","prop_b":"value_b"}'
