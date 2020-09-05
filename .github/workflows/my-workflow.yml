@@ -5,7 +5,7 @@ on:
 
 jobs:
   backport:
-    name: `My Action`
+    name: My Action
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
